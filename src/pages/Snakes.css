@@ -1,0 +1,133 @@
+.snake-slider-container {
+    position: relative;
+    width: 80%;
+    height: 500px;
+    margin: 0 auto;
+    perspective: 1200px; /* 3D effect */
+    overflow: hidden; /* Hide overflowing images */
+  }
+  
+  .slider {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transform-style: preserve-3d;
+    transition: transform 1s ease-in-out;
+  }
+  
+  .slider-item {
+    position: absolute;
+    width: 250px;
+    height: 250px;
+    opacity: 0.7;
+    transition: transform 0.5s ease, opacity 0.5s ease;
+  }
+  
+  .slider-item.active {
+    opacity: 1;
+  }
+  
+  .slider-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+  }
+  
+  .slider-info {
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    text-align: center;
+    color: white;
+    background: rgba(0, 0, 0, 0.5);
+    padding: 10px;
+    border-radius: 5px;
+    display: none;
+  }
+  
+  .slider-item:hover .slider-info {
+    display: block;
+  }
+  
+  /* Controls */
+  .controls {
+    position: absolute;
+    top: 50%;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transform: translateY(-50%);
+  }
+  
+  .arrow-btn {
+    background: transparent;
+    color: white;
+    font-size: 30px;
+    padding: 10px;
+    cursor: pointer;
+    border: none;
+    transition: transform 0.3s ease;
+  }
+  
+  .arrow-btn:hover {
+    transform: scale(1.2);
+  }
+  
+  .arrow-btn.prev {
+    margin-left: 20px;
+  }
+  
+  .arrow-btn.next {
+    margin-right: 20px;
+  }
+  
+  /* Responsiveness */
+  @media (max-width: 768px) {
+    .snake-slider-container {
+      width: 100%;
+      height: 400px;
+    }
+  
+    .slider-item {
+      width: 200px;
+      height: 200px;
+    }
+  
+    .controls {
+      top: 70%;
+    }
+  
+    .arrow-btn {
+      font-size: 25px;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .snake-slider-container {
+      width: 100%;
+      height: 300px;
+    }
+  
+    .slider-item {
+      width: 150px;
+      height: 150px;
+    }
+  
+    .controls {
+      top: 80%;
+    }
+  
+    .arrow-btn {
+      font-size: 20px;
+    }
+  }
+  

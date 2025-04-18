@@ -1,0 +1,189 @@
+/* General Setup */
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Arial', sans-serif;
+  background-color: #f5f5f5;
+}
+
+.home-page {
+  padding: 20px;
+}
+
+/* Tagline Section */
+.tagline {
+  text-align: center;
+  margin-top: 50px;
+}
+
+.tagline h1 {
+  font-size: 3rem;
+  color: #2e7d32;
+}
+
+/* About Section - Paragraph + 2x2 Grid */
+.about-section {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-top: 40px;
+  gap: 40px;
+  flex-wrap: wrap;
+}
+
+.about-text {
+  flex: 1;
+  max-width: 60%;
+}
+
+.about-text h2 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+  color: #fff;
+}
+
+.about-text p {
+  font-size: 1.1rem;
+  color: #fff;
+  line-height: 1.6;
+}
+
+/* Right 2x2 Image Grid */
+.image-grid-wrapper {
+  flex: 1;
+  max-width: 35%;
+}
+
+.tight-image-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  gap: 0;
+  width: 100%;
+  aspect-ratio: 1 / 1;
+  overflow: hidden;
+  border-radius: 12px;
+}
+
+.tight-image-grid img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+/* Animal Grid Section */
+.animal-grid-section {
+  margin-top: 60px;
+  text-align: center;
+}
+
+.animal-grid-section h2 {
+  font-size: 2rem;
+  margin-bottom: 30px;
+  color: #2e7d32;
+}
+
+/* Animal Grid (3x3) */
+.animal-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  justify-items: center;
+}
+
+.animal-card {
+  position: relative;
+  overflow: hidden;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  background: #fff;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  width: 100%;
+  aspect-ratio: 1 / 1;
+  height: 250px;
+  max-width: 25rem; 
+}
+
+.animal-card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+}
+
+.animal-card img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* Hover Info Overlay */
+.animal-info {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.6);
+  color: #fff;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 12px;
+  text-align: center;
+}
+
+.animal-card:hover .animal-info {
+  opacity: 1;
+}
+
+.animal-info h3 {
+  font-size: 1.1rem;
+  margin-bottom: 6px;
+}
+
+.animal-info p {
+  font-size: 0.9rem;
+  line-height: 1.3;
+}
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+  .about-section {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .about-text,
+  .image-grid-wrapper {
+    max-width: 100%;
+  }
+
+  .animal-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 640px) {
+  .animal-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .tagline h1 {
+    font-size: 2rem;
+  }
+
+  .animal-info h3 {
+    font-size: 1rem;
+  }
+
+  .animal-info p {
+    font-size: 0.85rem;
+  }
+}
