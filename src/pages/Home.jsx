@@ -26,10 +26,10 @@ const Home = () => {
         {/* Right side: 2x2 Image Grid */}
         <div className="image-grid-wrapper">
           <div className="tight-image-grid">
-            <img src="/src/images/mammls.png" alt="Mammals" />
-            <img src="/src/images/bird.png" alt="Birds" />
-            <img src="/src/images/reptile.png" alt="Reptiles" />
-            <img src="/src/images/aqatic.png" alt="Aquatic Animals" />
+            <img src="/src/assets/images/mammls.png" alt="Mammals" />
+            <img src="/src/assets/images/bird.png" alt="Birds" />
+            <img src="/src/assets/images/reptile.png" alt="Reptiles" />
+            <img src="/src/assets/images/aqatic.png" alt="Aquatic Animals" />
           </div>
         </div>
       </div>
@@ -40,7 +40,7 @@ const Home = () => {
         <div className="animal-grid">
           {['lion', 'lepord', 'tiger', 'elephant', 'raino', 'crocodiles', 'cheeta', 'wolf', 'bear'].map((animal, index) => (
             <div className="animal-card" key={index}>
-              <img src={`/src/images/${animal}.jpg`} alt={animal} />
+              <img src={`/src/assets/images/${animal}.jpg`} alt={animal} />
               <div className="animal-info">
                 <h3>{animal.charAt(0).toUpperCase() + animal.slice(1)}</h3>
                 <p>

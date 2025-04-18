@@ -3,14 +3,14 @@ import './Landanimal.css';
 
 // Updated images for Snakes
 const snakes = [
-  { src: '/src/images/s1.jpg', info: 'Snake 1: Description about snake 1' },
-  { src: '/src/images/s2.jpg', info: 'Snake 2: Description about snake 2' },
-  { src: '/src/images/s3.jpg', info: 'Snake 3: Description about snake 3' },
-  { src: '/src/images/s4.jpg', info: 'Snake 4: Description about snake 4' },
-  { src: '/src/images/s5.jpg', info: 'Snake 5: Description about snake 5' },
-  { src: '/src/images/s6.jpg', info: 'Snake 6: Description about snake 6' },
-  { src: '/src/images/s7.jpg', info: 'Snake 7: Description about snake 7' },
-  { src: '/src/images/s8.jpg', info: 'Snake 8: Description about snake 8' },
+  { src: '/src/assets/images/s1.jpg', info: 'Snake 1: Description about snake 1' },
+  { src: '/src/assets/images/s2.jpg', info: 'Snake 2: Description about snake 2' },
+  { src: '/src/assets/images/s3.jpg', info: 'Snake 3: Description about snake 3' },
+  { src: '/src/assets/images/s4.jpg', info: 'Snake 4: Description about snake 4' },
+  { src: '/src/assets/images/s5.jpg', info: 'Snake 5: Description about snake 5' },
+  { src: '/src/assets/images/s6.jpg', info: 'Snake 6: Description about snake 6' },
+  { src: '/src/assets/images/s7.jpg', info: 'Snake 7: Description about snake 7' },
+  { src: '/src/assets/images/s8.jpg', info: 'Snake 8: Description about snake 8' },
 ];
 
 const Snakes = () => {

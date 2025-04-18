@@ -3,14 +3,14 @@ import './Snakes.css';
 
 // Updated images for Land Animals
 const landAnimals = [
-  { src: '/src/images/l1.jpg', info: 'Land Animal 1: Description about land animal 1' },
-  { src: '/src/images/l2.jpg', info: 'Land Animal 2: Description about land animal 2' },
-  { src: '/src/images/l3.jpg', info: 'Land Animal 3: Description about land animal 3' },
-  { src: '/src/images/l4.jpg', info: 'Land Animal 4: Description about land animal 4' },
-  { src: '/src/images/l5.jpg', info: 'Land Animal 5: Description about land animal 5' },
-  { src: '/src/images/l6.jpg', info: 'Land Animal 6: Description about land animal 6' },
-  { src: '/src/images/l7.jpg', info: 'Land Animal 7: Description about land animal 7' },
-  { src: '/src/images/l8.jpg', info: 'Land Animal 8: Description about land animal 8' },
+  { src: '/src/assets/images/l1.jpg', info: 'Land Animal 1: Description about land animal 1' },
+  { src: '/src/assets/images/l2.jpg', info: 'Land Animal 2: Description about land animal 2' },
+  { src: '/src/assets/images/l3.jpg', info: 'Land Animal 3: Description about land animal 3' },
+  { src: '/src/assets/images/l4.jpg', info: 'Land Animal 4: Description about land animal 4' },
+  { src: '/src/assets/images/l5.jpg', info: 'Land Animal 5: Description about land animal 5' },
+  { src: '/src/assets/images/l6.jpg', info: 'Land Animal 6: Description about land animal 6' },
+  { src: '/src/assets/images/l7.jpg', info: 'Land Animal 7: Description about land animal 7' },
+  { src: '/src/assets/images/l8.jpg', info: 'Land Animal 8: Description about land animal 8' },
 ];
 
 const LandAnimals = () => {

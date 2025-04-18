@@ -2,14 +2,14 @@ import React, { useState } from 'react';
 import './Reptiles.css';
 
 const images = [
-  { src: '/src/images/reptile1.jpg', info: 'Reptile 1 Info: Description about reptile 1' },
-  { src: '/src/images/reptile2.jpg', info: 'Reptile 2 Info: Description about reptile 2' },
-  { src: '/src/images/reptile3.jpg', info: 'Reptile 3 Info: Description about reptile 3' },
-  { src: '/src/images/reptile4.jpg', info: 'Reptile 4 Info: Description about reptile 4' },
-  { src: '/src/images/reptile5.jpg', info: 'Reptile 5 Info: Description about reptile 5' },
-  { src: '/src/images/reptile6.jpg', info: 'Reptile 6 Info: Description about reptile 6' },
-  { src: '/src/images/reptile7.jpg', info: 'Reptile 7 Info: Description about reptile 7' },
-  { src: '/src/images/reptile8.jpg', info: 'Reptile 8 Info: Description about reptile 8' },
+  { src: '/src/assets/images/reptile1.jpg', info: 'Reptile 1 Info: Description about reptile 1' },
+  { src: '/src/assets/images/reptile2.jpg', info: 'Reptile 2 Info: Description about reptile 2' },
+  { src: '/src/assets/images/reptile3.jpg', info: 'Reptile 3 Info: Description about reptile 3' },
+  { src: '/src/assets/images/reptile4.jpg', info: 'Reptile 4 Info: Description about reptile 4' },
+  { src: '/src/assets/images/reptile5.jpg', info: 'Reptile 5 Info: Description about reptile 5' },
+  { src: '/src/assets/images/reptile6.jpg', info: 'Reptile 6 Info: Description about reptile 6' },
+  { src: '/src/assets/images/reptile7.jpg', info: 'Reptile 7 Info: Description about reptile 7' },
+  { src: '/src/assets/images/reptile8.jpg', info: 'Reptile 8 Info: Description about reptile 8' },
 ];
 
 const Reptiles = () => {
